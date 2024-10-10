@@ -1,6 +1,6 @@
-let maximum = parseInt(prompt("masukan nilai maximum"));
+let maximum = parseInt(prompt("masukan angka"));
 while (!maximum){
-    maximum = parseInt(prompt("nilai maximum tidak boleh kosong"));
+    maximum = parseInt(prompt("angka tidak boleh kosong"));
 };
 const targetNum = Math.floor(Math.random() * maximum) + 1;
 console.log (targetNum)
@@ -10,9 +10,9 @@ let attempts = 1;
 while (parseInt(penebak) !== targetNum){
   attempts++;
   if (penebak > targetNum){
-    penebak = prompt("Nilai tebakan terlalu tinggi")
+    penebak = prompt("angka tebakan terlalu tinggi")
   } else {
-    penebak = prompt("Nilai tebakan terlalu rendah")
+    penebak = prompt("angka tebakan terlalu rendah")
   }
 }
 alert(`LOVE YOU..`)
